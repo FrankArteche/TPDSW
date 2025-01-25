@@ -1,0 +1,203 @@
+@import 'styles.scss';
+
+body {
+    background-color: $fondo-blanco;
+}
+
+.navbar {
+    background-color: $azul !important;
+}
+
+.navbar-nav {
+    justify-content: flex-end;
+    align-items: end;
+    margin: 45px 0 0 0;
+}
+
+.navbar-nav .btn-warning {
+    background-color: $naranja;
+    border: none;
+    color: $blanco;
+    font-weight: bold;
+    border-radius: 5px;
+    margin: 0 0 0 5px;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: darken($naranja, 5%);
+    }
+}
+
+.navbar-light .navbar-brand,
+.navbar-light .navbar-nav .nav-link {
+    color: $blanco !important;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: lighten($blanco, 20%) !important;
+}
+
+.navbar-toggler {
+    margin: 45px 0 0 0;
+}
+
+.collapse {
+    margin: 0;
+}
+.collapse .btn-warning {
+    padding: 5px 8px;
+}
+
+.search-bar-custom {
+    background-color: $fondo-gris;
+    border: 1px solid $azul;
+    border-radius: 5px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    option {
+        color: $azul;
+    }
+
+    // Select (dropdown de categorías)
+    .custom-select {
+        border: none;
+        background-color: $fondo-gris;
+        padding: 8px;
+        font-size: 14px;
+        color: $azul;
+        outline: none;
+        appearance: none;
+        width: auto;
+        margin-right: 5px;
+        cursor: pointer;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+
+    // Input 
+    .custom-input {
+        flex: 1;
+        border: none;
+        background-color: $fondo-blanco;
+        padding: 10px;
+        font-size: 14px;
+        color: $azul;
+        outline: none;
+        width: 350px;
+    }
+
+    // (lupa)
+    .custom-button {
+        background-color: $fondo-blanco;
+        border: none;
+        padding: 8px;
+        font-size: 16px;
+        color: $negro;
+        cursor: pointer;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+            color: $celeste;
+        }
+    }
+}
+
+aside {
+    h2 {
+        color: $azul;
+    }
+
+    a {
+        color: $azul;
+        text-decoration: none;
+    }
+
+    .accordion-button {
+        color: $azul;
+    }
+
+    .accordion-body {
+        position: relative;
+
+        .range-header {
+            display: flex;
+            justify-content: space-between; 
+            align-items: center;
+            margin-bottom: 8px; 
+            font-size: 14px;
+            font-weight: bold;
+
+            .range-label-left {
+                color: $azul; // texto de la izquierda
+            }
+
+            .range-label-right {
+                color: #004b9a; // texto de la derecha
+                font-size: 14px;
+
+                span {
+                    font-weight: normal;
+                }
+            }
+        }
+
+        // barra de rango
+        .form-range {
+            width: 100%; 
+            margin-top: 5px;
+
+            &::-webkit-slider-thumb {
+                background-color: #004b9a;
+                border: none;
+                border-radius: 50%;
+                width: 16px;
+                height: 16px;
+            }
+
+            &::-moz-range-thumb {
+                background-color: #004b9a;
+                border: none;
+                border-radius: 50%;
+                width: 16px;
+                height: 16px;
+            }
+        }
+
+    }
+}
+
+.section-productos {
+    background-color: $fondo-gris;
+    padding: 2%;
+    border-radius: 5px;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .ratio {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+
+        img {
+            max-width: 100%;
+            object-fit: cover;
+            padding: 2%;
+        }
+    }
+}
