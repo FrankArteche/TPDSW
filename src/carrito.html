@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>RollArgent - Carrito</title>
+    <link rel="icon" href="../dist/img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../dist/styles/styles_carrito.css">
+</head>
+<body>
+    <!-- Header similar al de producto.html -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+               
+                <div class="d-flex flex-column align-items-start">
+                    <a class="navbar-brand" href="#">RollArgent</a>
+                    
+                    <div class="search-bar-custom d-flex align-items-center mt-1">
+                        <select name="categories" id="categories" class="custom-select">
+                            <option value="todos">Todos</option>
+                            <option value="otros">Otros</option>
+                        </select>
+                        <input type="text" class="custom-input" placeholder="Buscar patines nacionales">
+                        <button type="button" class="custom-button">
+                            🔍︎
+                        </button>
+                    </div>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end align-items-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="#">Tienda</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Sobre Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><strong>Ingresar</strong></a></li>
+                        <li class="nav-item"><a class="nav-link btn btn-warning text-dark" href="#">Regístrate</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">🛒Carrito</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container mt-4">
+        <div class="cart-header">
+            <h1 class="brand">Roll<span>Argent</span></h1>
+            <div class="progress-steps">
+                <div class="step active">Información</div>
+                <div class="step">Detalle del pago</div>
+                <div class="step">Orden Completa</div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <!-- Columna izquierda - Resumen de orden -->
+            <div class="col-md-7">
+                <div class="order-summary">
+                    <h2>Resumen de orden</h2>
+                    <p class="text-muted">Revisa tu artículo y selecciona tu envío para una mejor experiencia</p>
+                    
+                    <div class="cart-items">
+                        <!-- Item del carrito -->
+                        <div class="cart-item">
+                            <div class="item-image">
+                                <img src="../dist/img/productos/ruedas.jpg" alt="Ruedas">
+                                <button class="remove-item">×</button>
+                            </div>
+                            <div class="item-details">
+                                <h3>Roll-Line Ruedas Roll-Line Giotto x8 unidades</h3>
+                                <p class="price">$80.000,00</p>
+                                <div class="quantity-controls">
+                                    <button class="btn-quantity">-</button>
+                                    <input type="number" value="1" min="1">
+                                    <button class="btn-quantity">+</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Repetir para más items -->
+                    </div>
+
+                    <div class="shipping-methods mt-4">
+                        <h3>Métodos de envío disponibles</h3>
+                        <div class="shipping-option">
+                            <input type="radio" name="shipping" id="home">
+                            <label for="home">
+                                <img src="../dist/img/correo.png" alt="Correo Argentino">
+                                <div>
+                                    <span>Envío a Domicilio</span>
+                                    <small>Envío: 2-3 días laborales</small>
+                                </div>
+                                <span class="shipping-price">$8550,90</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Columna derecha - Formulario de pago -->
+            <div class="col-md-5">
+                <div class="payment-details">
+                    <h2>Resumen de orden</h2>
+                    <form>
+                        <div class="form-group mb-3">
+                            <label>Email</label>
+                            <input type="email" class="form-control" placeholder="ejemplo@email.com">
+                        </div>
+
+                        <div class="card-details">
+                            <h3>Detalle de tarjeta</h3>
+                            <div class="form-group mb-3">
+                                <label>Número de Tarjeta</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <label>MM/AA</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="col-6">
+                                    <label>CVC</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="shipping-address mt-4">
+                            <h3>Dirección de envío</h3>
+                            <div class="form-group mb-3">
+                                <input type="text" class="form-control" placeholder="Dirección">
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <input type="text" class="form-control" placeholder="Ciudad">
+                                </div>
+                                <div class="col-6">
+                                    <input type="text" class="form-control" placeholder="Código Postal">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="order-total mt-4">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>Subtotal</span>
+                                <span>$1.930.000,00</span>
+                            </div>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>Envío</span>
+                                <span>$8550,90</span>
+                            </div>
+                            <div class="d-flex justify-content-between total">
+                                <span>Total</span>
+                                <span>$1.938.550,90</span>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-lg w-100 mt-3">
+                            PAGAR $1.938.550,90
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-dark text-white text-center py-3 mt-4">
+        <div class="container">
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#" class="text-white text-decoration-none">Tienda</a></li>
+                <li class="list-inline-item"><a href="#" class="text-white text-decoration-none">Sobre Nosotros</a></li>
+                <li class="list-inline-item"><a href="#" class="text-white text-decoration-none">Contacto</a></li>
+            </ul>
+            <p class="mb-0">RollArgent, 2024 all rights reserved</p>
+        </div>
+    </footer>
+    <script src="../dist/js/carrito.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 
