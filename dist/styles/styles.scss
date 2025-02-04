@@ -12,3 +12,161 @@ $negro: #1E1E1E;
     padding: 0;
     box-sizing: border-box;
 } 
+
+.navbar {
+    background-color: $azul !important;
+}
+
+.navbar-nav {
+    justify-content: flex-end;
+    align-items: end;
+    margin: 45px 0 0 0;
+}
+
+// .navbar-dark .navbar-nav .nav-link {
+//     color: lighten($blanco, 15%);
+// }
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: lighten($blanco, 20%) !important;
+}
+
+.navbar-nav .btn-warning {
+    background-color: $naranja;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin: 0 0 0 5px;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: lighten($naranja, 15%);
+        color: $negro !important;
+    }
+}
+
+.navbar-dark .navbar-brand {
+    padding: 0;
+    margin: 0;
+}
+.navbar-dark .navbar-brand span.roll {
+    color: $naranja !important;
+    display: inline-block;
+    font-weight: 400;
+    font-family: "Genos", serif;
+    font-size: 35px;
+}
+
+.navbar-dark .navbar-brand span.argent {
+    color: $celeste !important;
+    display: inline-block;
+    font-weight: 400;
+    font-family: "Genos", serif;
+    font-size: 35px;
+}
+
+.navbar-toggler {
+    margin: 45px 0 0 0;
+}
+
+.collapse {
+    margin: 0;
+}
+
+.collapse .btn-warning {
+    padding: 5px 8px;
+}
+
+.search-bar-custom {
+    background-color: $fondo-gris;
+    border: 1px solid $azul;
+    border-radius: 5px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    option {
+        color: $azul;
+    }
+
+    // Select (dropdown de categorías)
+    .custom-select {
+        border: none;
+        background-color: $fondo-gris;
+        padding: 8px;
+        font-size: 14px;
+        color: $azul;
+        outline: none;
+        appearance: none;
+        width: auto;
+        margin-right: 5px;
+        cursor: pointer;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+
+    // Input 
+    .custom-input {
+        flex: 1;
+        border: none;
+        background-color: $fondo-blanco;
+        padding: 10px;
+        font-size: 14px;
+        color: $azul;
+        outline: none;
+        width: 350px;
+    }
+
+    // (lupa)
+    .custom-button {
+        background-color: $fondo-blanco;
+        border: none;
+        padding: 8px;
+        font-size: 16px;
+        color: $negro;
+        cursor: pointer;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+            color: $celeste;
+        }
+    }
+}
+
+footer {
+    background-color: $azul !important; 
+    color: $celeste !important; 
+
+    a {
+        color: $celeste !important; 
+        text-decoration: none;
+
+        &:hover {
+            color: lighten($celeste, 10%) !important;
+        }
+    }
+
+    .footer-brand {
+        font-family: "Genos", serif;
+        font-size: 35px;
+        font-weight: 400;
+        display: inline-block;
+        margin-top: 0;
+
+        span.roll {
+            color: $naranja !important;
+        }
+
+        span.argent {
+            color: $celeste !important;
+        }
+    }
+
+    .list-inline {
+        margin-bottom: 0 !important;
+    }
+}
