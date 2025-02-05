@@ -4,6 +4,41 @@
   box-sizing: border-box;
 }
 
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.breadcrumb-container {
+  background-color: #81B6D0;
+  padding: 10px;
+  position: fixed;
+  top: 115px;
+  height: 40px;
+  width: 100%;
+  z-index: 999;
+}
+.breadcrumb-container .breadcrumb-item {
+  color: #023047;
+  margin: 0 0 10px 8px;
+  text-shadow: rgba(30, 30, 30, 0.3607843137) 0.5px 0.5px 2px;
+}
+.breadcrumb-container a {
+  text-decoration: none;
+  color: #023047;
+}
+.breadcrumb-container a:hover {
+  color: #034b6f;
+  text-shadow: #162f3c 1px 2px 5px;
+}
+
+main {
+  padding-top: 160px;
+}
+
 .navbar {
   background-color: #023047 !important;
 }
@@ -150,7 +185,7 @@ body {
   background-color: #F2F2F2;
 }
 
-aside h2 {
+aside h3 {
   color: #023047;
 }
 aside a {
@@ -204,6 +239,7 @@ aside .accordion-body .form-range::-moz-range-thumb {
   background-color: #D9D9D9;
   padding: 2%;
   border-radius: 5px;
+  margin-top: 12px;
 }
 
 .card {
@@ -295,4 +331,27 @@ aside .accordion-body .form-range::-moz-range-thumb {
 }
 .pagination .page-item .page-link:hover {
   background-color: #ffcd95;
+}
+
+@media (max-width: 576px) {
+  .pagination-container {
+    padding: 10px;
+  }
+  .pagination .page-item {
+    margin: 0 2px;
+  }
+  .pagination .page-item .page-link {
+    font-size: 12px;
+  }
+}
+@media (max-width: 376px) {
+  .pagination-container {
+    padding: 2px;
+  }
+  .pagination .page-item {
+    margin: 0;
+  }
+  .pagination .page-item .page-link {
+    font-size: 10px;
+  }
 }/*# sourceMappingURL=styles_tienda.css.map */

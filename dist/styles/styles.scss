@@ -7,11 +7,49 @@ $fondo-blanco: #F2F2F2;
 $blanco: #FFFFFF;
 $negro: #1E1E1E;
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-} 
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.breadcrumb-container {
+    background-color: $celeste;
+    padding: 10px;
+    position: fixed;
+    top: 115px;
+    height: 40px;
+    width: 100%;
+    z-index: 999;
+
+    .breadcrumb-item {
+        color: $azul;
+        margin: 0 0 10px 8px;
+        text-shadow: #1e1e1e5c 0.5px 0.5px 2px;
+    }
+
+    a {
+        text-decoration: none;
+        color: $azul;
+
+        &:hover {
+            color: lighten($azul, 8%);
+            text-shadow: darken($celeste, 50%) 1px 2px 5px;
+        }
+    }
+}
+
+main {
+    padding-top: 160px;
+}
 
 .navbar {
     background-color: $azul !important;
@@ -22,10 +60,6 @@ $negro: #1E1E1E;
     align-items: end;
     margin: 45px 0 0 0;
 }
-
-// .navbar-dark .navbar-nav .nav-link {
-//     color: lighten($blanco, 15%);
-// }
 
 .navbar-dark .navbar-nav .nav-link:hover {
     color: lighten($blanco, 20%) !important;
@@ -49,6 +83,7 @@ $negro: #1E1E1E;
     padding: 0;
     margin: 0;
 }
+
 .navbar-dark .navbar-brand span.roll {
     color: $naranja !important;
     display: inline-block;
@@ -138,11 +173,11 @@ $negro: #1E1E1E;
 }
 
 footer {
-    background-color: $azul !important; 
-    color: $celeste !important; 
+    background-color: $azul !important;
+    color: $celeste !important;
 
     a {
-        color: $celeste !important; 
+        color: $celeste !important;
         text-decoration: none;
 
         &:hover {
@@ -168,5 +203,28 @@ footer {
 
     .list-inline {
         margin-bottom: 0 !important;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .search-bar-custom {
+        .custom-select {
+            font-size: 12px !important;
+        }
+
+        .custom-input {
+            font-size: 12px !important;
+            width: 200px !important;
+        }
+
+    }
+
+    .navbar-toggler {
+        margin-top: 58px !important;
+    }
+
+    .breadcrumb-container {
+        top: 112px !important;
     }
 }

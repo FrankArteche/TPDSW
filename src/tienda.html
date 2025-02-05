@@ -61,12 +61,19 @@
 
     </header>
 
+    <nav aria-label="breadcrumb" class="breadcrumb-container">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Tienda</li>
+        </ol>
+    </nav>
+
     <main class="container mt-4">
 
         <div class="row">
             <!-- sidebar filtros -->
-            <aside class="col-md-3">
-                <h2>Filtros</h2>
+            <aside class="col-12 col-md-3 col-lg-3">
+                <h3>Filtros</h3>
                 <div class="accordion" id="filtersAccordion">
 
                     <div class="accordion-item">
@@ -215,24 +222,24 @@
 
 
             <!-- grid productos -->
-            <section class="section-productos col-md-9">
+            <section class="section-productos col-12 col-sm-12 col-md-9 col-lg-9">
                 <div class="row">
-                    <div class="col-md-4 mb-4">
+                    <div class="col-6 col-md-6 col-lg-4 mb-4"> <!-- 2 columnas en celular, 2 en tablet, 3 en PC -->
                         <div class="card">
                             <div class="ratio ratio-1x1">
-                                <img src="/dist/img/productos/risport_ambra_combo.jpg" class="card-img-top"
-                                    alt="Edea - Roll-line COMBO 12">
+                                <img src="/dist/img/productos/combo_detalle.jpg" class="card-img-top"
+                                    alt="Edea - Roll-line COMBO 10">
                             </div>
                             <div class="card-body">
                                 <p class="card-text">Edea - Roll-line</p>
-                                <h5 class="card-title">COMBO 12</h5>
-                                <p class="card-text">$1.800.000,00</p>
-                                <p class="card-text">6 cuotas de $300.000</p>
-                                <a href="#" class="btn btn-primary">Comprar</a>
+                                <h5 class="card-title">COMBO 10</h5>
+                                <p class="card-text">$1.110.000,00</p>
+                                <p class="card-text">6 cuotas de $185.000</p>
+                                <a href="./producto.html" class="btn btn-primary">Comprar</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 mb-4">
+                    <div class="col-6 col-md-6 col-lg-4 mb-4">
                         <div class="card">
                             <div class="ratio ratio-1x1">
                                 <img src="/dist/img/productos/combo4.jpg" class="card-img-top"
@@ -247,7 +254,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 mb-4">
+                    <div class="col-6 col-md-6 col-lg-4 mb-4">
                         <div class="card">
                             <div class="ratio ratio-1x1">
                                 <img src="/dist/img/productos/edea_ritmo-negra.jpg" class="card-img-top"
@@ -262,50 +269,98 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                
 
-                <div class="row">
-                    <div class="col-md-4 mb-4">
+                
+                    <div class="col-6 col-md-6 col-lg-4 mb-4">
                         <div class="card">
                             <div class="ratio ratio-1x1">
-                                <img src="/dist/img/productos/risport_ambra_combo.jpg" class="card-img-top"
-                                    alt="Edea - Roll-line COMBO 12">
+                                <img src="/dist/img/productos/risport_turchese-perla.jpg" class="card-img-top"
+                                    alt="risport_turchese-perla">
                             </div>
                             <div class="card-body">
-                                <p class="card-text">Edea - Roll-line</p>
-                                <h5 class="card-title">COMBO 12</h5>
-                                <p class="card-text">$1.800.000,00</p>
-                                <p class="card-text">6 cuotas de $300.000</p>
+                                <p class="card-text">Risport</p>
+                                <h5 class="card-title">Bota Risport Turchese</h5>
+                                <p class="card-text">$899.000,00</p>
+                                <p class="card-text">6 cuotas de $149.833,33</p>
                                 <a href="#" class="btn btn-primary">Comprar</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 mb-4">
+                    <div class="col-6 col-md-6 col-lg-4 mb-4">
                         <div class="card">
                             <div class="ratio ratio-1x1">
-                                <img src="/dist/img/productos/combo4.jpg" class="card-img-top"
-                                    alt="Edea - Roll-line COMBO 14">
+                                <img src="/dist/img/productos/ruedas_giotto.jpg" class="card-img-top"
+                                    alt="ruedas_giotto">
                             </div>
                             <div class="card-body">
-                                <p class="card-text">Edea - Roll-line</p>
-                                <h5 class="card-title">COMBO 14</h5>
-                                <p class="card-text">$2.300.000,00</p>
-                                <p class="card-text">6 cuotas de $383.333,33</p>
+                                <p class="card-text">Roll-line</p>
+                                <h5 class="card-title">Ruedas Roll-Line Giotto x8 u</h5>
+                                <p class="card-text">$170.000,00</p>
+                                <p class="card-text">3 cuotas de $56.666,66</p>
                                 <a href="#" class="btn btn-primary">Comprar</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 mb-4">
+                    <div class="col-6 col-md-6 col-lg-4 mb-4">
                         <div class="card">
                             <div class="ratio ratio-1x1">
-                                <img src="/dist/img/productos/edea_ritmo-negra.jpg" class="card-img-top"
-                                    alt="Edea - Roll-line COMBO 12">
+                                <img src="/dist/img/productos/plancha_evo.jpg" class="card-img-top"
+                                    alt="plancha_evo">
                             </div>
                             <div class="card-body">
-                                <p class="card-text">Edea</p>
-                                <h5 class="card-title">Bota Edea Ritmo</h5>
-                                <p class="card-text">$950.000,00</p>
-                                <p class="card-text">6 cuotas de $158.333,33</p>
+                                <p class="card-text">Roll-Line</p>
+                                <h5 class="card-title">Plancha Roll-Line Evo</h5>
+                                <p class="card-text">$749.000,00</p>
+                                <p class="card-text">6 cuotas de $124.833,33</p>
+                                <a href="#" class="btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                
+
+                
+                    <div class="col-6 col-md-6 col-lg-4 mb-4">
+                        <div class="card">
+                            <div class="ratio ratio-1x1">
+                                <img src="/dist/img/productos/suspensiones.jpg" class="card-img-top"
+                                    alt="suspensiones">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Roll-Line</p>
+                                <h5 class="card-title">Suspensiones x4 unidades</h5>
+                                <p class="card-text">$77.000,00</p>
+                                <p class="card-text">3 cuotas de $25.666,66</p>
+                                <a href="#" class="btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-6 col-lg-4 mb-4">
+                        <div class="card">
+                            <div class="ratio ratio-1x1">
+                                <img src="/dist/img/productos/combo_bolso.jpg" class="card-img-top"
+                                    alt="bolso-cajon">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Yuco</p>
+                                <h5 class="card-title">Bolso Cajon para Patines</h5>
+                                <p class="card-text">$55.200,00</p>
+                                <p class="card-text">3 cuotas de $18.400,00</p>
+                                <a href="#" class="btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-6 col-lg-4 mb-4">
+                        <div class="card">
+                            <div class="ratio ratio-1x1">
+                                <img src="/dist/img/productos/ruedas_ice.jpg" class="card-img-top"
+                                    alt="ruedas_ice">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Roll-Line</p>
+                                <h5 class="card-title">Ruedas Ice x8 unidades</h5>
+                                <p class="card-text">$200.000,00</p>
+                                <p class="card-text">3 cuotas de $66.666,66</p>
                                 <a href="#" class="btn btn-primary">Comprar</a>
                             </div>
                         </div>
@@ -315,27 +370,23 @@
 
                 <nav aria-label="pagination-container">
                     <ul class="pagination justify-content-center">
-                      <li class="page-item disabled">
-                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">← Anterior</a>
-                      </li>
-                      <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                      <li class="page-item"><a class="page-link" href="#">2</a></li>
-                      <li class="page-item"><a class="page-link" href="#">3</a></li>
-                      <li class="page-item disabled"><a href="#" class="page-link">...</a></li>
-                      <li class="page-item"><a class="page-link" href="#">15</a></li>
-                      <li class="page-item"><a class="page-link" href="#">16</a></li>
-                      <li class="page-item">
-                        <a class="page-link" href="#">Siguiente →</a>
-                      </li>
+                        <li class="page-item disabled">
+                            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">← Anterior</a>
+                        </li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item disabled"><a href="#" class="page-link">...</a></li>
+                        <li class="page-item"><a class="page-link" href="#">15</a></li>
+                        <li class="page-item"><a class="page-link" href="#">16</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">Siguiente →</a>
+                        </li>
                     </ul>
-                  </nav>
+                </nav>
 
             </section>
         </div>
-
-
-        
-
 
     </main>
 
