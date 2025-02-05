@@ -12,3 +12,26 @@ body{
     background-color: $naranja !important;
     border-color: transparent !important;
 }
+
+.rollargent-box {
+    text-align: center;
+    background-color: $azul !important;
+    border-radius: 10px;
+  
+    .roll {
+      color: $naranja !important;
+      display: inline-block;
+      font-weight: 400;
+      font-family: "Genos", serif;
+      font-size: 60px;
+    }
+  
+    .argent {
+      color: $celeste !important; // Cambia este color al que necesites
+      display: inline-block;
+      font-weight: 400;
+      font-family: "Genos", serif;
+      font-size: 60px;
+    }
+  }
+  

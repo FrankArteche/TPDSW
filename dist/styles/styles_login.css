@@ -157,4 +157,24 @@ body {
 .btn-primary {
   background-color: #FB8500 !important;
   border-color: transparent !important;
+}
+
+.rollargent-box {
+  text-align: center;
+  background-color: #023047 !important;
+  border-radius: 10px;
+}
+.rollargent-box .roll {
+  color: #FB8500 !important;
+  display: inline-block;
+  font-weight: 400;
+  font-family: "Genos", serif;
+  font-size: 60px;
+}
+.rollargent-box .argent {
+  color: #81B6D0 !important;
+  display: inline-block;
+  font-weight: 400;
+  font-family: "Genos", serif;
+  font-size: 60px;
 }/*# sourceMappingURL=styles_login.css.map */
