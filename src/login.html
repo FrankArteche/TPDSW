@@ -16,7 +16,7 @@
         rel="stylesheet">
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
@@ -48,7 +48,7 @@
                         <li class="nav-item"><a class="nav-link" href="./tienda.html">Tienda</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Sobre Nosotros</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#"><strong>Ingresar</strong></a></li>
+                        <li class="nav-item"><a class="nav-link" href="./login.html"><strong>Ingresar</strong></a></li>
                         <li class="nav-item"><a class="nav-link btn btn-warning text-dark" href="#">Regístrate</a></li>
                         <li class="nav-item"><a class="nav-link" href="./carrito.html">🛒Carrito</a></li>
                     </ul>
@@ -57,8 +57,8 @@
         </nav>
     </header>
 <!-- Formulario de inicio de Sesion -->
-    <section class="vh-100 d-flex justify-content-center align-items-center p-4 m-4">
-        <div class="d-flex flex-column align-items-center p-4  bg-light shadow rounded" style="width: 600px; height: 500px;">
+    <section class="flex-grow-1 d-flex justify-content-center align-items-center p-4 m-4">
+        <div class="d-flex flex-column align-items-center p-4  bg-light shadow tarjeta" style="width: 500px; height: 550px;">
             <div class="rollargent-box text-center mb-3 w-100">
                 <p class="fs-3 fw-bold">RollArgent</p>
             </div>
@@ -79,13 +79,20 @@
                     <input type="checkbox" class="form-check-input" id="exampleCheck1">
                     <label class="form-check-label" for="exampleCheck1">Recuérdame</label>
                 </div>
-                <button type="submit" class="btn btn-primary w-100">Ingresar</button>
+                <button type="submit" class="btn btn-primary w-100 ingresar">Ingresar</button>
+                <div>
+                    <a class="nav-link" href="#">Olvidaste tu contraseña ?</a>
+                </div>
+                <div class="d-flex">
+                    <p>No tenes cuenta ?</p> 
+                    <a class="nav-link" href="#">¡Registrate!</a>
+                </div>
             </form>
         </div>
     </section>
     
 <!-- Navbar Fixed -->
-    <footer class="text-center py-3 mt-4 fixed-bottom">
+    <footer class="text-center py-3 mt-auto position-relative">
         <div class="container">
             <ul class="list-inline">
                 <li class="list-inline-item"><a href="./tienda.html" class="text-decoration-none">Tienda</a></li>
