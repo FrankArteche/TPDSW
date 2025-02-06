@@ -3,3 +3,19 @@
 body{
     background-color: $fondo-gris !important;
 }
+
+.rest-button{
+    background-color: $naranja !important;
+    border-color: transparent !important;
+}
+.pass{
+    color: $amarillo !important;
+    text-decoration: none !important;
+    margin-left: 0.5rem;
+  }
+
+  .text-recupera{
+    color: $azul !important;
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
