@@ -1,3 +1,5 @@
+@import 'styles.scss';
+
 .cart-header {
     .brand {
         color: #ff6b00;
@@ -149,3 +151,11 @@
         padding-top: 10px;
     }
 } 
+
+form {
+    button {
+        background-color: $naranja !important;
+        border: none;
+        
+    }
+}
