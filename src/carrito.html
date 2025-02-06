@@ -8,16 +8,24 @@
     <link rel="icon" href="../dist/img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="../dist/styles/styles.css">
     <link rel="stylesheet" href="../dist/styles/styles_carrito.css">
+      <!-- tipografia logo -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Genos:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet">
+  
 </head>
 <body>
     <!-- Header similar al de producto.html -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
-               
+
                 <div class="d-flex flex-column align-items-start">
-                    <a class="navbar-brand" href="#">RollArgent</a>
-                    
+                    <a class="navbar-brand" href="#">
+                        <span class="roll">Roll</span><span class="argent">Argent</span>
+                    </a>
+
                     <div class="search-bar-custom d-flex align-items-center mt-1">
                         <select name="categories" id="categories" class="custom-select">
                             <option value="todos">Todos</option>
@@ -30,7 +38,8 @@
                     </div>
                 </div>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -40,14 +49,15 @@
                         <li class="nav-item"><a class="nav-link" href="#">Sobre Nosotros</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
                         <li class="nav-item"><a class="nav-link" href="./login.html"><strong>Ingresar</strong></a></li>
-                        <li class="nav-item"><a class="nav-link btn btn-warning text-dark" href="#">Regístrate</a></li>
+                        <li class="nav-item"><a class="nav-link btn btn-warning text-dark" href="./register.html">Regístrate</a></li>
                         <li class="nav-item"><a class="nav-link" href="./carrito.html">🛒Carrito</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
-        
+
     </header>
+    
 
     <div class="container mt-4 ">
         <div class="cart-header m-4">
@@ -68,6 +78,36 @@
                     
                     <div class="cart-items">
                         <!-- Item del carrito -->
+                        <div class="cart-item">
+                            <div class="item-image">
+                                <img src="..\dist\img\productos\ruedas_fox-agarre.jpg" alt="Ruedas">
+                                <button class="remove-item">×</button>
+                            </div>
+                            <div class="item-details">
+                                <h3>Roll-Line Ruedas Roll-Line Giotto x8 unidades</h3>
+                                <p class="price">$80.000,00</p>
+                                <div class="quantity-controls">
+                                    <button class="btn-quantity">-</button>
+                                    <input type="number" value="1" min="1">
+                                    <button class="btn-quantity">+</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-item">
+                            <div class="item-image">
+                                <img src="..\dist\img\productos\combo_bolso.jpg" alt="Mochila">
+                                <button class="remove-item">×</button>
+                            </div>
+                            <div class="item-details">
+                                <h3>Yuco Mochila/Bolso para patines + Cubrebota</h3>
+                                <p class="price">$50.000,00</p>
+                                <div class="quantity-controls">
+                                    <button class="btn-quantity">-</button>
+                                    <input type="number" value="1" min="1">
+                                    <button class="btn-quantity">+</button>
+                                </div>
+                            </div>
+                        </div>
                         <div class="cart-item">
                             <div class="item-image">
                                 <img src="../dist/img/productos/ruedas.jpg" alt="Ruedas">
@@ -170,7 +210,7 @@
         </div>
     </div>
 
-    <footer class="text-center py-3 mt-4 position-relative">
+    <footer class="text-center py-3 mt-4">
         <div class="container">
             <ul class="list-inline">
                 <li class="list-inline-item"><a href="./tienda.html" class="text-decoration-none">Tienda</a></li>
