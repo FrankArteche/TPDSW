@@ -181,6 +181,21 @@ footer .list-inline {
   margin-bottom: 0 !important;
 }
 
+@media (max-width: 576px) {
+  .search-bar-custom .custom-select {
+    font-size: 12px !important;
+  }
+  .search-bar-custom .custom-input {
+    font-size: 12px !important;
+    width: 200px !important;
+  }
+  .navbar-toggler {
+    margin-top: 58px !important;
+  }
+  .breadcrumb-container {
+    top: 112px !important;
+  }
+}
 body {
   background-color: #F2F2F2;
 }
