@@ -23,16 +23,15 @@ header {
 
 .breadcrumb-container {
     background-color: $celeste;
-    padding: 10px;
     position: fixed;
     top: 115px;
     height: 40px;
     width: 100%;
     z-index: 999;
+    margin: 0;
 
     .breadcrumb-item {
         color: $azul;
-        margin: 0 0 10px 8px;
         text-shadow: #1e1e1e5c 0.5px 0.5px 2px;
     }
 
@@ -48,7 +47,8 @@ header {
 }
 
 main {
-    padding-top: 160px;
+    padding: 0;
+    margin-top: 150px;
 }
 
 .navbar {

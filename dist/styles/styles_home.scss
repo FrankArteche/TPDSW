@@ -1,0 +1,128 @@
+@import 'styles.scss';
+
+main {
+    background-color: $fondo-blanco;
+}
+
+.breadcrumb-item {
+    padding: 10px;
+}
+
+.bienvenida {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-family: "Genos", serif;
+    color: $azul;
+    padding: 45px 0 0 0;
+    top: 150px;
+
+    img {
+        max-width: 180px;
+    }
+}
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0 20px 0;
+
+    img{
+        max-width: 90px;
+    }
+}
+#carousel-caption {
+    max-height: 600px;
+    overflow: hidden;
+    margin-top: 0;
+    padding-top: 0;
+    // position: relative;
+    //top: 120px;
+}
+
+.carousel-inner img {
+    height: 600px;
+    object-fit: cover;
+}
+
+.carousel-item {
+    a {
+        text-decoration: none;
+        color: $blanco;
+        text-shadow: 2px 2px 6px $azul;
+        font-size: 50px;
+        margin-bottom: 220px;
+
+        &:hover {
+            color: lighten($blanco, 20%);
+            text-shadow: 1.5px 1.5px 8px darken($celeste, 40%) !important;
+        }
+    }
+
+    p {
+        text-shadow: 2px 2px 6px $azul;
+        margin-bottom: 200px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    #carousel-caption {
+        max-height: 300px;
+    }
+
+    .carousel-inner img {
+        height: 300px;
+    }
+
+    .carousel-item {
+        a {
+            font-size: 36px;
+            margin-bottom: 100px;
+        }
+
+        p {
+            margin-bottom: 80px;
+            font-size: 16px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+
+    .bienvenida {
+        font-size: 24px;
+        padding: 24px 0 0 0;
+        img {
+            max-width: 135px;
+        }
+    }
+    .logo {
+        img {
+            max-width: 70px;
+        }
+    }
+
+    #carousel-caption {
+        max-height: 220px;
+    }
+
+    .carousel-inner img {
+        height: 220px;
+    }
+
+    .carousel-item {
+        a {
+            font-size: 12px !important;
+            margin-bottom: 28px;
+        }
+
+        p {
+            margin-bottom: 24px;
+            font-size: 10px !important;
+        }
+    }
+}
+
+@media (max-width: 376px) {}

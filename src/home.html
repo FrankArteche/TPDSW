@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Compra patines artísticos, accesorios y repuestos en RollArgent. Encuentra las mejores marcas nacionales e importadas para patinaje artístico y recreativo al mejor precio. ¡Envíos a todo el país!">
+    <meta name="keywords"
+        content="patines artísticos, patín sobre ruedas, accesorios para patín, repuestos para patines, patines nacionales, patines importados, tienda online de patines, botas patín artístico">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>RollArgent - Patines artísticos</title>
+    <link rel="icon" href="/dist/img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="/dist/styles/styles.css">
+    <link rel="stylesheet" href="/dist/styles/styles_home.css">
+    <!-- tipografia logo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Genos:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+
+                <div class="d-flex flex-column align-items-start">
+                    <a class="navbar-brand" href="./home.html">
+                        <span class="roll">Roll</span><span class="argent">Argent</span>
+                    </a>
+
+                    <div class="search-bar-custom d-flex align-items-center mt-1">
+                        <select name="categories" id="categories" class="custom-select">
+                            <option value="todos">Todos</option>
+                            <option value="otros">Otros</option>
+                        </select>
+                        <input type="text" class="custom-input" placeholder="Buscar patines nacionales">
+                        <button type="button" class="custom-button">
+                            🔍︎
+                        </button>
+                    </div>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end align-items-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="./tienda.html">Tienda</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Sobre Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./login.html"><strong>Ingresar</strong></a></li>
+                        <li class="nav-item"><a class="nav-link btn btn-warning text-dark"
+                                href="./register.html">Regístrate</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./carrito.html">🛒Carrito</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <nav aria-label="breadcrumb" class="breadcrumb-container">
+        <ol class="breadcrumb">
+            <!-- <li class="breadcrumb-item"><a href="#">Inicio</a></li> -->
+            <li class="breadcrumb-item active" aria-current="page">Inicio</li>
+        </ol>
+    </nav>
+
+
+
+    <main>
+
+        <div class="bienvenida container-fluid text-center mt-5">
+            <h1>Bienvenido a</h1>
+            <img src="/dist/img/RollArgent.png" alt="logo rollargent">
+        </div>
+        <div class="logo container-fluid text-center"><img src="/dist/img/logo2.png" alt="logo animado"></div>
+
+
+        <div id="carousel-caption" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/dist/img/productos/combo4-2.jpg" class="d-block w-100" alt="Bota Edea Fly combo 4">
+                <div class="carousel-caption d-md-block">
+                  <a href="./tienda.html"><h2>Combos para Patín Artístico</h2></a>
+                  <p>Encontra los mejores combos para patinar con la mejor calidad y precisión</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="/dist/img/productos/bolso2.jpg" class="d-block w-100" alt="Bolso Edea para patines">
+                <div class="carousel-caption d-md-block">
+                  <a href="./tienda.html"><h2>Accesorios para Patín Artístico</h2></a>
+                  <p>Contamos con muchos accesorios para tu comodidad</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="/dist/img/productos/plancha-roll-line-mistral-2.jpg" class="d-block w-100" alt="plancha roll-line mistral">
+                <div class="carousel-caption d-md-block">
+                  <a href="./tienda.html"><h2>Repuestos para Patín Artístico</h2></a>
+                  <p>Tenemos todos los repuestos que necesitas</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-caption" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel-caption" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+
+
+
+
+    </main>
+
+
+
+    <footer class="text-center py-3 mt-4">
+        <div class="container">
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="./tienda.html" class="text-decoration-none">Tienda</a></li>
+                <li class="list-inline-item"><a href="#" class="text-decoration-none">Sobre Nosotros</a></li>
+                <li class="list-inline-item"><a href="#" class="text-decoration-none">Contacto</a></li>
+            </ul>
+            <a class="footer-brand" href="./home.html">
+                <span class="roll">Roll</span><span class="argent">Argent</span>
+            </a>
+            <p class="mb-0">RollArgent, 2025 all rights reserved</p>
+        </div>
+    </footer>
+
+
+    <script src="/dist/js/home.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
