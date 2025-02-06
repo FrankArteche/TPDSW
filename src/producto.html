@@ -4,18 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>RollArgent - Tienda</title>
+    <title>RollArgent - Producto</title>
     <link rel="icon" href="../dist/img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="/dist/styles/styles.css">
     <link rel="stylesheet" href="../dist/styles/styles_producto.css">
+     <!-- tipografia logo -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Genos:ital,wght@0,100..900;1,100..900&display=swap"
+         rel="stylesheet"> 
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100">
+    
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
-               
+
                 <div class="d-flex flex-column align-items-start">
-                    <a class="navbar-brand" href="#">RollArgent</a>
-                    
+                    <a class="navbar-brand" href="#">
+                        <span class="roll">Roll</span><span class="argent">Argent</span>
+                    </a>
+
                     <div class="search-bar-custom d-flex align-items-center mt-1">
                         <select name="categories" id="categories" class="custom-select">
                             <option value="todos">Todos</option>
@@ -28,7 +37,8 @@
                     </div>
                 </div>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -38,15 +48,16 @@
                         <li class="nav-item"><a class="nav-link" href="#">Sobre Nosotros</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
                         <li class="nav-item"><a class="nav-link" href="./login.html"><strong>Ingresar</strong></a></li>
-                        <li class="nav-item"><a class="nav-link btn btn-warning text-dark" href="#">Regístrate</a></li>
+                        <li class="nav-item"><a class="nav-link btn btn-warning text-dark" href="./register.html">Regístrate</a></li>
                         <li class="nav-item"><a class="nav-link" href="./carrito.html">🛒Carrito</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
-        
+
     </header>
-<section class="container mt-4">
+    
+<section class="container d-flex flex-column align-items-center flex-grow-1 ">
     <div class="row">
         <!-- Miniaturas del producto -->
         <div class="col-md-1">
@@ -140,7 +151,6 @@
             </div>
         </div>
     </div>
-
     <!-- Sección de recomendaciones -->
     <div class="recommendations mt-5">
         <h3>Recomendaciones</h3>
@@ -149,19 +159,26 @@
         </div>
     </div>
 </section>
-<footer class="bg-dark text-white text-center py-3 mt-4">
+
+<footer class="text-center py-3 mt-4">
     <div class="container">
         <ul class="list-inline">
-            <li class="list-inline-item"><a href="#" class="text-white text-decoration-none">Tienda</a></li>
-            <li class="list-inline-item"><a href="#" class="text-white text-decoration-none">Sobre Nosotros</a></li>
-            <li class="list-inline-item"><a href="#" class="text-white text-decoration-none">Contacto</a></li>
+            <li class="list-inline-item"><a href="./tienda.html" class="text-decoration-none">Tienda</a></li>
+            <li class="list-inline-item"><a href="#" class="text-decoration-none">Sobre Nosotros</a></li>
+            <li class="list-inline-item"><a href="#" class="text-decoration-none">Contacto</a></li>
         </ul>
-        <p class="mb-0">RollArgent, 2024 all rights reserved</p>
+        <a class="footer-brand" href="#">
+            <span class="roll">Roll</span><span class="argent">Argent</span>
+        </a>
+        <p class="mb-0">RollArgent, 2025 all rights reserved</p>
     </div>
 </footer>
 
 
+
 <script src="../dist/js/producto.js" ></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
 </html>
