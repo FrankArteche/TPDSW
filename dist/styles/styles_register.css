@@ -183,3 +183,16 @@
     height: 100vh;
   }
   
+  .imagenDesktop{
+    display: contents;
+    @media (max-width:768px) {
+      display: none;
+    }
+  }
+
+  .imagenResponsive{
+    display: contents;
+    @media (min-width:768px) {
+      display: none;
+    }
+  }
