@@ -14,16 +14,15 @@ header {
 
 .breadcrumb-container {
   background-color: #81B6D0;
-  padding: 10px;
   position: fixed;
   top: 115px;
   height: 40px;
   width: 100%;
   z-index: 999;
+  margin: 0;
 }
 .breadcrumb-container .breadcrumb-item {
   color: #023047;
-  margin: 0 0 10px 8px;
   text-shadow: rgba(30, 30, 30, 0.3607843137) 0.5px 0.5px 2px;
 }
 .breadcrumb-container a {
@@ -36,7 +35,8 @@ header {
 }
 
 main {
-  padding-top: 160px;
+  padding: 0;
+  margin-top: 150px;
 }
 
 .navbar {
@@ -290,8 +290,8 @@ footer .list-inline {
   cursor: pointer;
 }
 .shipping-methods .shipping-option label img {
-  width: 40px;
-  height: 40px;
+  width: 80px;
+  height: 80px;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -324,5 +324,9 @@ footer .list-inline {
 
 form button {
   background-color: #FB8500 !important;
-  border: none;
+  border-color: transparent !important;
+}
+
+.card-progress {
+  margin-top: 7rem !important;
 }/*# sourceMappingURL=styles_carrito.css.map */
