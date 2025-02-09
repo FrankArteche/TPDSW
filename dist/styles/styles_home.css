@@ -36,7 +36,8 @@ header {
 
 main {
   padding: 0;
-  margin-top: 150px;
+  margin-top: 180px;
+  z-index: 998;
 }
 
 .navbar {
@@ -198,6 +199,7 @@ footer .list-inline {
 }
 main {
   background-color: #F2F2F2;
+  padding-bottom: 30px;
 }
 
 .breadcrumb-item {
@@ -258,6 +260,58 @@ main {
   font-size: 20px;
 }
 
+.prodDestacados img {
+  width: 100%;
+  aspect-ratio: 4/5;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px;
+}
+
+.categorias a {
+  text-decoration: none;
+  color: #023047;
+  transition: all 0.3s ease;
+}
+.categorias a:hover {
+  color: #FB8500;
+}
+.categorias img {
+  max-height: 200px;
+  max-width: 200px;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+  display: block;
+  margin: 0;
+  padding: 0;
+  margin: 0;
+}
+.categorias .contImg {
+  margin: auto;
+  padding: 0;
+  flex: 0 0 0;
+}
+.categorias .carousel-control-prev {
+  left: -9%;
+}
+.categorias .carousel-control-next {
+  right: -8%;
+}
+.categorias .carousel-control-prev-icon {
+  filter: invert(1);
+}
+.categorias .carousel-control-next-icon {
+  filter: invert(1);
+}
+
+@media (max-width: 1024px) {
+  .categorias img {
+    max-height: 110px;
+    max-width: 110px;
+  }
+}
 @media (max-width: 768px) {
   #carousel-caption {
     max-height: 300px;
@@ -272,6 +326,10 @@ main {
   .carousel-item p {
     margin-bottom: 80px;
     font-size: 16px;
+  }
+  .categorias img {
+    max-height: 110px;
+    max-width: 110px;
   }
 }
 @media (max-width: 576px) {
@@ -298,5 +356,10 @@ main {
   .carousel-item p {
     margin-bottom: 24px;
     font-size: 10px !important;
+  }
+  .categorias img {
+    max-height: 120px;
+    max-width: 120px;
+    margin-top: 8px;
   }
 }/*# sourceMappingURL=styles_home.css.map */

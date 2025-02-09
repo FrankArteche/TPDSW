@@ -3,7 +3,9 @@
 body {
     background-color: $fondo-blanco;
 }
-
+.container {
+    margin-top: 50px !important;
+}
 aside {
     h3 {
         color: $azul;

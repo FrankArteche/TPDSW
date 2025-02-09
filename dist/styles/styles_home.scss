@@ -2,6 +2,7 @@
 
 main {
     background-color: $fondo-blanco;
+    padding-bottom: 30px;
 }
 
 .breadcrumb-item {
@@ -22,16 +23,18 @@ main {
         max-width: 180px;
     }
 }
+
 .logo {
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 10px 0 20px 0;
 
-    img{
+    img {
         max-width: 90px;
     }
 }
+
 #carousel-caption {
     max-height: 600px;
     overflow: hidden;
@@ -67,6 +70,70 @@ main {
     }
 }
 
+.prodDestacados {
+    img {
+        width: 100%;
+        aspect-ratio: 4 / 5;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+}
+
+.categorias {
+    a {
+        text-decoration: none;
+        color: $azul;
+        transition: all 0.3s ease;
+        
+        &:hover {
+            color: $naranja;
+        }
+    }
+
+    img {
+        max-height: 200px;
+        max-width: 200px;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        border-radius: 5px;
+        display: block;
+        margin: 0;
+        padding: 0;
+        margin: 0;
+    }
+
+    .contImg {
+        margin: auto ;
+        padding: 0 ;
+        flex: 0 0 0;
+    }
+
+    .carousel-control-prev {
+        left: -9%; 
+    }
+    
+    .carousel-control-next {
+        right: -8%; 
+    }
+
+    .carousel-control-prev-icon {
+        filter: invert(1); 
+    }
+    
+    .carousel-control-next-icon {
+        filter: invert(1); 
+    }
+}
+
+@media (max-width: 1024px) {
+    .categorias {
+        img {
+            max-height: 110px;
+            max-width: 110px;
+        }
+    }
+}
+
 @media (max-width: 768px) {
     #carousel-caption {
         max-height: 300px;
@@ -87,6 +154,13 @@ main {
             font-size: 16px;
         }
     }
+
+    .categorias {
+        img {
+            max-height: 110px;
+            max-width: 110px;
+        }
+    }
 }
 
 @media (max-width: 576px) {
@@ -94,10 +168,12 @@ main {
     .bienvenida {
         font-size: 24px;
         padding: 24px 0 0 0;
+
         img {
             max-width: 135px;
         }
     }
+
     .logo {
         img {
             max-width: 70px;
@@ -121,6 +197,13 @@ main {
         p {
             margin-bottom: 24px;
             font-size: 10px !important;
+        }
+    }
+    .categorias {
+        img {
+            max-height: 120px;
+            max-width: 120px;
+            margin-top: 8px;
         }
     }
 }
