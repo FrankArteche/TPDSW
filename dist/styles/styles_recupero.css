@@ -19,11 +19,14 @@ header {
   height: 40px;
   width: 100%;
   z-index: 999;
-  margin: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 .breadcrumb-container .breadcrumb-item {
   color: #023047;
   text-shadow: rgba(30, 30, 30, 0.3607843137) 0.5px 0.5px 2px;
+  padding: 8px;
+  margin-left: 5px;
 }
 .breadcrumb-container a {
   text-decoration: none;
@@ -36,12 +39,8 @@ header {
 
 main {
   padding: 0;
-<<<<<<< HEAD
   margin-top: 180px;
   z-index: 998;
-=======
-  margin-top: 150px;
->>>>>>> e9a70e2472408755a28d5cd10b67ee3f17e4d245
 }
 
 .navbar {
@@ -218,10 +217,33 @@ body {
 
 .text-recupera {
   color: #023047 !important;
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   font-weight: bold;
 }
 
 .tarjeta-recupero {
   margin-top: 7rem !important;
+}
+
+.imagenDesktop {
+  display: contents;
+}
+@media (max-width: 768px) {
+  .imagenDesktop {
+    display: none;
+  }
+}
+
+.imagenResponsive {
+  display: contents;
+}
+@media (min-width: 768px) {
+  .imagenResponsive {
+    display: none;
+  }
+}
+
+.textol-recupera {
+  color: #023047 !important;
+  font-size: 0.8rem !important;
 }/*# sourceMappingURL=styles_recupero.css.map */

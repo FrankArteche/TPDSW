@@ -28,7 +28,7 @@ body{
     }
   
     .argent {
-      color: $celeste !important; // Cambia este color al que necesites
+      color: $celeste !important;
       display: inline-block;
       font-weight: 400;
       font-family: "Genos", serif;
@@ -39,4 +39,18 @@ body{
   .pass{
     color: $amarillo !important;
     text-decoration: none !important;
+  }
+
+  .imagenDesktop{
+    display: contents;
+    @media (max-width: 768px){
+      display: none;
+    }
+  }
+
+  .imagenResponsive{
+    display: contents;
+    @media (min-width: 768px) {
+      display: none;
+    }
   }
