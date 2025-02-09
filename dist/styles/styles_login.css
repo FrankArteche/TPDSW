@@ -36,8 +36,12 @@ header {
 
 main {
   padding: 0;
+<<<<<<< HEAD
   margin-top: 180px;
   z-index: 998;
+=======
+  margin-top: 150px;
+>>>>>>> e9a70e2472408755a28d5cd10b67ee3f17e4d245
 }
 
 .navbar {
@@ -203,6 +207,7 @@ body {
 
 .tarjeta {
   border-radius: 10px !important;
+  margin-top: 7rem;
 }
 
 .btn-primary {

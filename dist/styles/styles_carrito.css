@@ -36,8 +36,12 @@ header {
 
 main {
   padding: 0;
+<<<<<<< HEAD
   margin-top: 180px;
   z-index: 998;
+=======
+  margin-top: 150px;
+>>>>>>> e9a70e2472408755a28d5cd10b67ee3f17e4d245
 }
 
 .navbar {
@@ -283,7 +287,7 @@ footer .list-inline {
 
 .shipping-methods .shipping-option label {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 15px;
   padding: 15px;
   border: 1px solid #ddd;
@@ -291,8 +295,8 @@ footer .list-inline {
   cursor: pointer;
 }
 .shipping-methods .shipping-option label img {
-  width: 40px;
-  height: 40px;
+  width: 80px;
+  height: 80px;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -325,5 +329,9 @@ footer .list-inline {
 
 form button {
   background-color: #FB8500 !important;
-  border: none;
+  border-color: transparent !important;
+}
+
+.card-progress {
+  margin-top: 7rem !important;
 }/*# sourceMappingURL=styles_carrito.css.map */

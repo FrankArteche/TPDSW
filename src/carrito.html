@@ -17,7 +17,7 @@
 </head>
 <body>
     <!-- Header similar al de producto.html -->
-    <header>
+    <header class="mb-5">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
 
@@ -59,7 +59,7 @@
     </header>
     
 
-    <div class="container mt-4 ">
+    <div class="mt-5 d-flex flex-column align-items-center card-progress">
         <div class="cart-header m-4">
             <h1 class="brand">Roll<span>Argent</span></h1>
             <div class="progress-steps">
@@ -69,7 +69,7 @@
             </div>
         </div>
 
-        <div class="row mt-4">
+        <div class=" container d-flex mt-4">
             <!-- Columna izquierda - Resumen de orden -->
             <div class="col-md-7">
                 <div class="order-summary">
@@ -125,29 +125,30 @@
                         </div>
                         <!-- Repetir para más items -->
                     </div>
-
+                    <!--Metodos de envio-->
                     <div class="shipping-methods m-4 d-flex flex-column">
                         <h3>Métodos de envío disponibles</h3>
                         <div class="shipping-option d-flex my-3">
-                            <input class="m-4" type="radio" name="shipping" id="home">
+                            
                             <label for="home">
                                 <img src="../dist/img/correo.png" alt="Correo Argentino">
                                 <div>
                                     <span>Envío a Domicilio</span>
                                     <small>Envío: 1-2 días habiles</small>
                                 </div>
-                                <span class="shipping-price">$8550,90</span>
+                                <input class="m-4" type="radio" name="shipping" id="home">
+                                <span class="shipping-price text-center d-flex align-items-center flex-column">$8550,90</span>
                             </label>
                         </div>
 
                         <div class="shipping-option d-flex my-3">
-                            <input class="m-4" type="radio" name="shipping" id="home">
                             <label for="home">
                                 <img src="../dist/img/correo.png" alt="Correo Argentino">
                                 <div>
                                     <span>Envío a Sucursal</span>
                                     <small>Envío: 2-3 días habiles</small>
                                 </div>
+                                <input class="m-4" type="radio" name="shipping" id="home">
                                 <span class="shipping-price">$5850,90</span>
                             </label>
                         </div>

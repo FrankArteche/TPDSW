@@ -36,8 +36,12 @@ header {
 
 main {
   padding: 0;
+<<<<<<< HEAD
   margin-top: 180px;
   z-index: 998;
+=======
+  margin-top: 150px;
+>>>>>>> e9a70e2472408755a28d5cd10b67ee3f17e4d245
 }
 
 .navbar {
@@ -216,4 +220,8 @@ body {
   color: #023047 !important;
   font-size: 2.5rem;
   font-weight: bold;
+}
+
+.tarjeta-recupero {
+  margin-top: 7rem !important;
 }/*# sourceMappingURL=styles_recupero.css.map */
