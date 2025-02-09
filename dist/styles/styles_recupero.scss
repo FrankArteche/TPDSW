@@ -16,10 +16,28 @@ body{
 
   .text-recupera{
     color: $azul !important;
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     font-weight: bold;
   }
 
 .tarjeta-recupero {
   margin-top: 7rem !important;
+}
+
+.imagenDesktop{
+  display: contents;
+  @media (max-width:768px) {
+    display: none;
+  }
+}
+
+.imagenResponsive{
+  display: contents;
+  @media (min-width:768px) {
+    display: none;
+  }
+}
+.textol-recupera{
+  color: $azul !important;
+  font-size: 0.8rem !important;
 }
