@@ -19,11 +19,14 @@ header {
   height: 40px;
   width: 100%;
   z-index: 999;
-  margin: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 .breadcrumb-container .breadcrumb-item {
   color: #023047;
   text-shadow: rgba(30, 30, 30, 0.3607843137) 0.5px 0.5px 2px;
+  padding: 8px;
+  margin-left: 5px;
 }
 .breadcrumb-container a {
   text-decoration: none;

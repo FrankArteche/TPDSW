@@ -2,7 +2,8 @@
 
 main {
     background-color: $fondo-blanco;
-    padding-bottom: 30px;
+    padding: 0 0 30px 0;
+    margin-top: 155px;
 }
 
 .breadcrumb-item {
@@ -10,6 +11,7 @@ main {
 }
 
 .bienvenida {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,7 +19,10 @@ main {
     font-family: "Genos", serif;
     color: $azul;
     padding: 45px 0 0 0;
-    top: 150px;
+
+    h3 {
+        font-size: 38px;
+    }
 
     img {
         max-width: 180px;
@@ -42,6 +47,18 @@ main {
     padding-top: 0;
     // position: relative;
     //top: 120px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 48px; // Ajusta la altura del degradado según lo necesites
+        background: linear-gradient(to bottom, $fondo-blanco 0%, rgba(255, 255, 255, 0) 100%);
+        z-index: 2; // Asegura que esté encima del carrusel
+        pointer-events: none;
+    }
 }
 
 .carousel-inner img {
@@ -84,7 +101,7 @@ main {
         text-decoration: none;
         color: $azul;
         transition: all 0.3s ease;
-        
+
         &:hover {
             color: $naranja;
         }
@@ -103,29 +120,38 @@ main {
     }
 
     .contImg {
-        margin: auto ;
-        padding: 0 ;
+        margin: auto;
+        padding: 0;
         flex: 0 0 0;
     }
 
     .carousel-control-prev {
-        left: -9%; 
+        left: -9%;
     }
-    
+
     .carousel-control-next {
-        right: -8%; 
+        right: -8%;
     }
 
     .carousel-control-prev-icon {
-        filter: invert(1); 
+        filter: invert(1);
     }
-    
+
     .carousel-control-next-icon {
-        filter: invert(1); 
+        filter: invert(1);
     }
 }
 
 @media (max-width: 1024px) {
+    .categorias {
+        img {
+            max-height: 150px;
+            max-width: 150px;
+        }
+    }
+}
+
+@media (max-width: 960px) {
     .categorias {
         img {
             max-height: 110px;
@@ -199,6 +225,7 @@ main {
             font-size: 10px !important;
         }
     }
+
     .categorias {
         img {
             max-height: 120px;

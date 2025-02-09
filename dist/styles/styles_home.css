@@ -19,11 +19,14 @@ header {
   height: 40px;
   width: 100%;
   z-index: 999;
-  margin: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 .breadcrumb-container .breadcrumb-item {
   color: #023047;
   text-shadow: rgba(30, 30, 30, 0.3607843137) 0.5px 0.5px 2px;
+  padding: 8px;
+  margin-left: 5px;
 }
 .breadcrumb-container a {
   text-decoration: none;
@@ -199,7 +202,8 @@ footer .list-inline {
 }
 main {
   background-color: #F2F2F2;
-  padding-bottom: 30px;
+  padding: 0 0 30px 0;
+  margin-top: 155px;
 }
 
 .breadcrumb-item {
@@ -207,6 +211,7 @@ main {
 }
 
 .bienvenida {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -214,7 +219,9 @@ main {
   font-family: "Genos", serif;
   color: #023047;
   padding: 45px 0 0 0;
-  top: 150px;
+}
+.bienvenida h3 {
+  font-size: 38px;
 }
 .bienvenida img {
   max-width: 180px;
@@ -235,6 +242,17 @@ main {
   overflow: hidden;
   margin-top: 0;
   padding-top: 0;
+}
+#carousel-caption::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 48px;
+  background: linear-gradient(to bottom, #F2F2F2 0%, rgba(255, 255, 255, 0) 100%);
+  z-index: 2;
+  pointer-events: none;
 }
 
 .carousel-inner img {
@@ -307,6 +325,12 @@ main {
 }
 
 @media (max-width: 1024px) {
+  .categorias img {
+    max-height: 150px;
+    max-width: 150px;
+  }
+}
+@media (max-width: 960px) {
   .categorias img {
     max-height: 110px;
     max-width: 110px;

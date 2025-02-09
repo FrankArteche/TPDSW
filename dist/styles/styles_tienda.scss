@@ -3,9 +3,13 @@
 body {
     background-color: $fondo-blanco;
 }
-.container {
-    margin-top: 50px !important;
+
+main {
+    padding: 0;
+    margin-top: calc(115px + 40px + 20px);
+    z-index: 998;
 }
+
 aside {
     h3 {
         color: $azul;

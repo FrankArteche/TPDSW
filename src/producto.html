@@ -56,109 +56,122 @@
         </nav>
 
     </header>
+
+    <nav aria-label="breadcrumb" class="breadcrumb-container">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="./home.html">Inicio</a></li>
+            <li class="breadcrumb-item"><a href="./tienda.html">Tienda</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Detalle Producto</li>
+        </ol>
+    </nav>
     
-<section class="container d-flex flex-column align-items-center flex-grow-1 ">
-    <div class="row">
-        <!-- Miniaturas del producto -->
-        <div class="col-md-1">
-            <div class="product-thumbnails d-flex flex-column">
-                <div class="thumbnail-wrapper">
-                    <img src="../dist/img/productos/combo_detalle.jpg" 
-                         class="img-thumbnail mb-2 active" 
-                         alt="Miniatura 1"
-                         onerror="this.src='dist/img/placeholder.png'; this.classList.add('placeholder');">
-                </div>
-                <div class="thumbnail-wrapper">
-                    <img src="../dist/img/productos/combo_detalle2.jpg" 
-                         class="img-thumbnail mb-2" 
-                         alt="Miniatura 2"
-                         onerror="this.src='dist/img/placeholder.png'; this.classList.add('placeholder');">
-                </div>
-                <div class="thumbnail-wrapper">
-                    <img src="../dist/img/productos/combo_detalle3.jpg" 
-                         class="img-thumbnail mb-2" 
-                         alt="Miniatura 3"
-                         onerror="this.src='dist/img/placeholder.png'; this.classList.add('placeholder');">
-                </div>
-            </div>
-        </div>
+    <main>
 
-        <!-- Imagen principal -->
-        <div class="col-md-6">
-            <div class="product-main-image">
-                <div class="main-image-wrapper">
-                    <img src="../dist/img/productos/combo_detalle4.jpg" 
-                         class="img-fluid" 
-                         alt="Producto principal"
-                         onerror="this.src='dist/img/placeholder.png'; this.classList.add('placeholder');">
-                </div>
-            </div>
-        </div>
-
-        <!-- Detalles del producto -->
-        <div class="col-md-5">
-            <div class="product-details">
-                <h1 class="product-title">COMBO 10</h1>
-                <p class="product-description">Bota: Edea Overture - Plancha: Roll- Line Variant - Ruedas: Roll-Line Giotto</p>
-                <h2 class="product-price">$ 1.110.000,00</h2>
-
-                <!-- Selector de talla -->
-                <div class="size-selector mb-3">
-                    <p>Selecciona el talle</p>
-                    <div class="size-buttons">
-                        <button class="size-btn">37</button>
-                        <button class="size-btn">38</button>
-                        <button class="size-btn">39</button>
-                        <button class="size-btn">40</button>
-                        <button class="size-btn">41</button>
-                        <button class="size-btn">42</button>
+        <section class="container d-flex flex-column align-items-center flex-grow-1 ">
+            <div class="row">
+                <!-- Miniaturas del producto -->
+                <div class="col-md-1">
+                    <div class="product-thumbnails d-flex flex-column">
+                        <div class="thumbnail-wrapper">
+                            <img src="../dist/img/productos/combo_detalle.jpg" 
+                                 class="img-thumbnail mb-2 active" 
+                                 alt="Miniatura 1"
+                                 onerror="this.src='dist/img/placeholder.png'; this.classList.add('placeholder');">
+                        </div>
+                        <div class="thumbnail-wrapper">
+                            <img src="../dist/img/productos/combo_detalle2.jpg" 
+                                 class="img-thumbnail mb-2" 
+                                 alt="Miniatura 2"
+                                 onerror="this.src='dist/img/placeholder.png'; this.classList.add('placeholder');">
+                        </div>
+                        <div class="thumbnail-wrapper">
+                            <img src="../dist/img/productos/combo_detalle3.jpg" 
+                                 class="img-thumbnail mb-2" 
+                                 alt="Miniatura 3"
+                                 onerror="this.src='dist/img/placeholder.png'; this.classList.add('placeholder');">
+                        </div>
                     </div>
                 </div>
-
-                <!-- Detalles técnicos -->
-                <div class="technical-details">
-                    <h3>Detalles del producto</h3>
-                    <table class="table">
-                        <tr>
-                            <td>Marca:</td>
-                            <td>Edea</td>
-                        </tr>
-                        <tr>
-                            <td>Nombre del modelo:</td>
-                            <td>Overture</td>
-                        </tr>
-                        <tr>
-                            <td>Plancha:</td>
-                            <td>Roll-Line Variant</td>
-                        </tr>
-                        <tr>
-                            <td>Ruedas:</td>
-                            <td>Roll-Line Giotto</td>
-                        </tr>
-                    </table>
-                </div>
-
-                <!-- Botones de compra -->
-                <div class="purchase-options">
-                    <div class="quantity-selector">
-                        <button class="btn btn-outline-secondary">-</button>
-                        <input type="number" value="1" min="1" class="form-control">
-                        <button class="btn btn-outline-secondary">+</button>
+        
+                <!-- Imagen principal -->
+                <div class="col-md-6">
+                    <div class="product-main-image">
+                        <div class="main-image-wrapper">
+                            <img src="../dist/img/productos/combo_detalle4.jpg" 
+                                 class="img-fluid" 
+                                 alt="Producto principal"
+                                 onerror="this.src='dist/img/placeholder.png'; this.classList.add('placeholder');">
+                        </div>
                     </div>
-                    <button class="btn btn-primary btn-lg w-100 mb-2">Agregar al Carrito</button>
-                    <button class="btn btn-success btn-lg w-100">Comprar ahora</button>
+                </div>
+        
+                <!-- Detalles del producto -->
+                <div class="col-md-5">
+                    <div class="product-details">
+                        <h1 class="product-title">COMBO 10</h1>
+                        <p class="product-description">Bota: Edea Overture - Plancha: Roll- Line Variant - Ruedas: Roll-Line Giotto</p>
+                        <h2 class="product-price">$ 1.110.000,00</h2>
+        
+                        <!-- Selector de talla -->
+                        <div class="size-selector mb-3">
+                            <p>Selecciona el talle</p>
+                            <div class="size-buttons">
+                                <button class="size-btn">37</button>
+                                <button class="size-btn">38</button>
+                                <button class="size-btn">39</button>
+                                <button class="size-btn">40</button>
+                                <button class="size-btn">41</button>
+                                <button class="size-btn">42</button>
+                            </div>
+                        </div>
+        
+                        <!-- Detalles técnicos -->
+                        <div class="technical-details">
+                            <h3>Detalles del producto</h3>
+                            <table class="table">
+                                <tr>
+                                    <td>Marca:</td>
+                                    <td>Edea</td>
+                                </tr>
+                                <tr>
+                                    <td>Nombre del modelo:</td>
+                                    <td>Overture</td>
+                                </tr>
+                                <tr>
+                                    <td>Plancha:</td>
+                                    <td>Roll-Line Variant</td>
+                                </tr>
+                                <tr>
+                                    <td>Ruedas:</td>
+                                    <td>Roll-Line Giotto</td>
+                                </tr>
+                            </table>
+                        </div>
+        
+                        <!-- Botones de compra -->
+                        <div class="purchase-options">
+                            <div class="quantity-selector">
+                                <button class="btn btn-outline-secondary">-</button>
+                                <input type="number" value="1" min="1" class="form-control">
+                                <button class="btn btn-outline-secondary">+</button>
+                            </div>
+                            <button class="btn btn-primary btn-lg w-100 mb-2">Agregar al Carrito</button>
+                            <button class="btn btn-success btn-lg w-100">Comprar ahora</button>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <!-- Sección de recomendaciones -->
-    <div class="recommendations mt-5">
-        <h3>Recomendaciones</h3>
-        <div class="row">
-            <!-- Agregar productos recomendados aquí -->
-        </div>
-    </div>
-</section>
+            <!-- Sección de recomendaciones -->
+            <div class="recommendations mt-5">
+                <h3>Recomendaciones</h3>
+                <div class="row">
+                    <!-- Agregar productos recomendados aquí -->
+                </div>
+            </div>
+        </section>
+
+    </main>
+
 
 <footer class="text-center py-3 mt-4">
     <div class="container">
