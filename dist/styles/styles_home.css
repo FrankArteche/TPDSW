@@ -242,42 +242,49 @@ main {
   overflow: hidden;
   margin-top: 0;
   padding-top: 0;
-}
-#carousel-caption::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 48px;
-  background: linear-gradient(to bottom, #F2F2F2 0%, rgba(255, 255, 255, 0) 100%);
+  position: relative;
   z-index: 2;
-  pointer-events: none;
+  box-shadow: inset 0 -10px 20px -5px rgba(0, 0, 0, 0.6), inset 0 10px 20px -5px rgba(0, 0, 0, 0.6);
 }
 
 .carousel-inner img {
   height: 600px;
   -o-object-fit: cover;
      object-fit: cover;
+  z-index: 1;
+  box-shadow: inset 0 -10px 20px -5px rgba(0, 0, 0, 0.6), inset 0 10px 20px -5px rgba(0, 0, 0, 0.6);
 }
 
+.carousel-item {
+  overflow: visible;
+}
 .carousel-item a {
   text-decoration: none;
-  color: #FFFFFF;
-  text-shadow: 2px 2px 6px #023047;
+  color: #1E1E1E;
+  text-shadow: 1.5px 1.5px 4px #FFFFFF;
   font-size: 50px;
   margin-bottom: 220px;
 }
 .carousel-item a:hover {
-  color: white;
-  text-shadow: 1.5px 1.5px 8px #244d61 !important;
+  text-shadow: 1.5px 1.5px 6px #b9d6e5 !important;
 }
 .carousel-item p {
-  text-shadow: 2px 2px 6px #023047;
+  color: #1E1E1E;
+  text-shadow: 1.5px 1.5px 2px #FFFFFF;
   margin-bottom: 200px;
   font-size: 20px;
 }
 
+.prodDestacados a {
+  text-decoration: none;
+  color: #023047;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+.prodDestacados a:hover {
+  color: #FB8500;
+}
 .prodDestacados img {
   width: 100%;
   aspect-ratio: 4/5;
@@ -322,6 +329,57 @@ main {
 }
 .categorias .carousel-control-next-icon {
   filter: invert(1);
+}
+
+.slogan {
+  padding: 2%;
+  margin: 100px 0 0 0;
+}
+.slogan h5 {
+  color: #FB8500;
+  text-transform: uppercase;
+  font-size: 32px;
+}
+
+.msj {
+  padding: 0 0 20px 0;
+  margin: 5px 0 0 0;
+}
+
+.mensaje {
+  color: #023047;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 40px 0 5px 0;
+}
+
+.formulario {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2px solid gray;
+  background-color: transparent;
+  max-width: 840px;
+}
+.formulario .form-control {
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+}
+.formulario .btn-enviar {
+  background-color: #FB8500;
+  color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 5px 0;
+  transition: all 0.3s ease;
+}
+.formulario .btn-enviar:hover {
+  background-color: #FFCB3B;
 }
 
 @media (max-width: 1024px) {
