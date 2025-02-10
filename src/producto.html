@@ -77,8 +77,8 @@
         <section class="container d-flex flex-column align-items-center flex-grow-1 ">
             <div class="row">
                 <!-- Miniaturas del producto -->
-                <div class="col-md-1">
-                    <div class="product-thumbnails d-flex flex-column">
+                <div class="col-md-1 d-none d-md-block">
+                    <div class="product-thumbnails d-flex flex-column ">
                         <div class="thumbnail-wrapper">
                             <img src="../dist/img/productos/combo_detalle4.jpg" class="img-thumbnail mb-2 active"
                                 alt="Miniatura 0 combo 10"
@@ -113,18 +113,67 @@
                 </div>
 
                 <!-- Imagen principal -->
-                <div class="col-md-6">
+                <div class="col-md-6 col-12">
                     <div class="product-main-image">
                         <div class="main-image-wrapper">
-                            <img src="../dist/img/productos/combo_detalle4.jpg" class="img-fluid"
+                            <img src="../dist/img/productos/combo_detalle4.jpg" class="img-fluid h-100 w-100 rounded"
                                 alt="Producto principal"
                                 onerror="this.src='dist/img/placeholder.png'; this.classList.add('placeholder');">
                         </div>
                     </div>
                 </div>
 
+                <!-- Miniaturas RESPONSIVE del producto -->
+                <div class="col-md-6 d-block d-md-none mt-2">
+                    <div class="product-thumbnails d-flex flex-row gap-2">
+                        <div class="thumbnail-wrapper">
+                            <img src="../dist/img/productos/combo_detalle4.jpg" class="img-thumbnail mb-2 active"
+                                alt="Miniatura 0 combo 10"
+                                onerror="this.src='dist/img/placeholder.png'; this.classList.add('placeholder');"
+                                style="width: 100px; height: 100px;"
+                                >
+                        </div>
+                        <div class="thumbnail-wrapper">
+                            <img src="../dist/img/productos/combo_detalle11.jpg" class="img-thumbnail mb-2"
+                                alt="Miniatura 1 combo 10"
+                                onerror="this.src='dist/img/placeholder.png'; this.classList.add('placeholder');"
+                                style="width: 100px; height: 100px;"
+                                >
+                        </div>
+                        <div class="thumbnail-wrapper">
+                            <img src="../dist/img/productos/combo_detalle6.jpg" class="img-thumbnail mb-2"
+                                alt="Miniatura 2 combo 10"
+                                onerror="this.src='dist/img/placeholder.png'; this.classList.add('placeholder');"
+                                style="width: 100px; height: 100px;"
+                                >
+                        </div>
+                        <div class="thumbnail-wrapper">
+                            <img src="../dist/img/productos/plancha_variantm.png" class="img-thumbnail mb-2"
+                                alt="Miniatura 3 combo 10"
+                                onerror="this.src='dist/img/placeholder.png'; this.classList.add('placeholder');"
+                                style="width: 100px; height: 100px;"
+                                >
+                        </div>
+                        <div class="thumbnail-wrapper">
+                            <img src="../dist/img/productos/combo_detalle2.jpg" class="img-thumbnail mb-2"
+                                alt="Miniatura 4 combo 10"
+                                onerror="this.src='dist/img/placeholder.png'; this.classList.add('placeholder');"
+                                style="width: 100px; height: 100px;"
+                                >
+                        </div>
+                        <div class="thumbnail-wrapper">
+                            <img src="../dist/img/productos/frenos2.jpg" class="img-thumbnail mb-2"
+                                alt="Miniatura 5 combo 10"
+                                onerror="this.src='dist/img/placeholder.png'; this.classList.add('placeholder');"
+                                style="width: 100px; height: 100px;"
+                                >
+                        </div>
+                    </div>
+                </div>
+
                 <!-- Detalles del producto -->
-                <div class="col-md-5">
+
+                <div class="col-md-5 col-12">
                     <div class="product-details">
                         <h1 class="product-title">COMBO 10</h1>
                         <p class="product-description">Bota: Edea Overture - Plancha: Roll- Line Variant - Ruedas:
@@ -199,7 +248,7 @@
                         <span class="review-count">(45 reseñas)</span>
                     </div>
                     <div class="info2 ">
-                        <p>Pago: Transacción segura  |  Enviado por: Correo Argentino  |  Vendido por: RollArgent  | 
+                        <p>Pago: Transacción segura | Enviado por: Correo Argentino | Vendido por: RollArgent |
                             Devoluciones: Dentro de los 30 días hábiles</p>
                     </div>
                 </div>
