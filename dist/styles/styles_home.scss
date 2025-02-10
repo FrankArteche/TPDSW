@@ -178,6 +178,13 @@ main {
 .msj {
     padding: 0 0 20px 0;
     margin: 5px 0 0 0;
+
+    .mensajeConfirmacion {
+        color: darken($naranja, 5%);
+        font-size: 16px;
+        font-weight: 500;
+        margin: 20px 0 5px 0;
+    }
 }
 
 .mensaje {

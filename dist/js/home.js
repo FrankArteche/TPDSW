@@ -29,3 +29,15 @@ document.addEventListener('DOMContentLoaded', function () {
     wrap: true
   });
 });
+
+document.getElementById("btnSuscribir").addEventListener("click", function () {
+  let email = document.getElementById("email").value;
+  let mensaje = document.getElementById("mensajeConfirmacion");
+  if (email.trim() !== "") {
+      mensaje.innerHTML = "¡Gracias por suscribirte! A partir de ahora vas a recibir nuestras novedades en tu email.";
+      mensaje.style.display = "block";
+  } else {
+      mensaje.innerHTML = "Por favor, ingresa un correo electrónico válido.";
+      mensaje.style.display = "block";
+  }
+});

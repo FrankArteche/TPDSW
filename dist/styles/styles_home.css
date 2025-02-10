@@ -357,6 +357,12 @@ main {
   padding: 0 0 20px 0;
   margin: 5px 0 0 0;
 }
+.msj .mensajeConfirmacion {
+  color: #e27700;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 20px 0 5px 0;
+}
 
 .mensaje {
   color: #023047;
