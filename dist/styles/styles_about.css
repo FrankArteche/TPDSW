@@ -200,183 +200,42 @@ footer .list-inline {
     top: 112px !important;
   }
 }
-body {
-  background-color: #F2F2F2;
-}
-
 main {
-  padding: 0;
-  margin-top: 175px;
-  z-index: 998;
+  margin-top: 180px;
+  padding-bottom: 5%;
 }
 
-aside h3 {
-  color: #023047;
-}
-aside a {
-  color: #023047;
-  text-decoration: none;
-}
-aside .accordion-button {
-  color: #023047;
-}
-aside .accordion-body {
-  position: relative;
-}
-aside .accordion-body .range-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 8px;
-  font-size: 14px;
-  font-weight: bold;
-}
-aside .accordion-body .range-header .range-label-left {
-  color: #023047;
-}
-aside .accordion-body .range-header .range-label-right {
-  color: #004b9a;
-  font-size: 14px;
-}
-aside .accordion-body .range-header .range-label-right span {
-  font-weight: normal;
-}
-aside .accordion-body .form-range {
-  width: 100%;
-  margin-top: 5px;
-}
-aside .accordion-body .form-range::-webkit-slider-thumb {
-  background-color: #004b9a;
-  border: none;
-  border-radius: 50%;
-  width: 16px;
-  height: 16px;
-}
-aside .accordion-body .form-range::-moz-range-thumb {
-  background-color: #004b9a;
-  border: none;
-  border-radius: 50%;
-  width: 16px;
-  height: 16px;
-}
-
-.section-productos {
-  background-color: #D9D9D9;
-  padding: 2%;
-  border-radius: 5px;
-  margin-top: 12px;
-}
-
-.card {
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  transition: all 0.3s ease;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-.card .ratio {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
-.card .ratio img {
-  max-width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+h1 {
+  font-size: 42px;
+  font-family: "Genos", serif;
+  color: #ec7d00;
   padding: 2%;
 }
-.card .card-body {
-  position: relative;
-}
-.card .card-body a.btn {
-  display: block;
-  width: -moz-fit-content;
-  width: fit-content;
-  margin: 0 auto;
-}
-.card .btn-primary {
-  background-color: #FFCB3B !important;
-  border-color: #FFCB3B !important;
-  border-radius: 8px !important;
-  padding: 1% 15%;
-  color: #1E1E1E !important;
-  font-weight: bold;
-  margin: 0 0 0 5px;
-  transition: all 0.3s ease;
-}
-.card .btn-primary:hover {
-  background-color: #eeae00 !important;
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 12px;
+  color: #023047;
 }
 
-.pagination-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 5px;
-  background-color: none;
-  border-radius: 5px;
-  border: none;
+p {
+  font-size: 16px;
+  margin-bottom: 12px;
+  color: #023047;
 }
 
-.pagination {
-  display: flex;
-  list-style: none;
-  padding: 0;
-  margin: 0;
+ul {
+  font-size: 16px;
+  margin-bottom: 12px;
+  color: #023047;
 }
-.pagination .page-item {
-  margin: 0 5px;
-}
-.pagination .page-item.disabled .page-link {
-  color: #B0B0B0;
-  pointer-events: none;
-}
-.pagination .page-item.active .page-link {
-  background-color: #FB8500;
-  color: white;
-  font-weight: bold;
-  border-radius: 8px;
-  border: none;
-  padding: 6px 12px;
-  border: none;
-}
-.pagination .page-item .page-link {
-  text-decoration: none;
-  font-size: 14px;
-  color: #1E1E1E;
-  padding: 6px 10px;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-  background-color: transparent;
-  border: none;
-}
-.pagination .page-item .page-link:hover {
-  background-color: #ffcd95;
+
+footer {
+  margin-top: 200px;
 }
 
 @media (max-width: 576px) {
-  .pagination-container {
-    padding: 10px;
+  main {
+    margin: 0 30px 0 30px;
   }
-  .pagination .page-item {
-    margin: 0 2px;
-  }
-  .pagination .page-item .page-link {
-    font-size: 12px;
-  }
-}
-@media (max-width: 376px) {
-  .pagination-container {
-    padding: 2px;
-  }
-  .pagination .page-item {
-    margin: 0;
-  }
-  .pagination .page-item .page-link {
-    font-size: 10px;
-  }
-}/*# sourceMappingURL=styles_tienda.css.map */
+}/*# sourceMappingURL=styles_about.css.map */

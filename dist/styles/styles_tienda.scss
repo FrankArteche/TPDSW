@@ -1,5 +1,9 @@
 @import 'styles.scss';
 
+$color-fondo: #D9D9D9;
+$color-activo: #FB8500;
+$color-desactivado: #B0B0B0;
+
 body {
     background-color: $fondo-blanco;
 }
@@ -130,9 +134,6 @@ aside {
     }
 }
 
-$color-fondo: #D9D9D9;
-$color-activo: #FB8500;
-$color-desactivado: #B0B0B0;
 
 .pagination-container {
     display: flex;
