@@ -49,52 +49,62 @@
                         <li class="nav-item"><a class="nav-link" href="./about.html">Sobre Nosotros</a></li>
                         <li class="nav-item"><a class="nav-link" href="./contact.html">Contacto</a></li>
                         <li class="nav-item"><a class="nav-link" href="./login.html"><strong>Ingresar</strong></a></li>
-                        <li class="nav-item"><a class="nav-link btn btn-warning text-dark" href="./register.html">Regístrate</a></li>
+                        <li class="nav-item"><a class="nav-link btn btn-warning text-dark"
+                                href="./register.html">Regístrate</a></li>
                         <li class="nav-item"><a class="nav-link" href="./carrito.html">🛒Carrito</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-<!-- Formulario de inicio de Sesion -->
-    <section class="flex-grow-1 d-flex justify-content-center align-items-center p-5 m-5 viewHeight">
-        <div class="d-flex flex-column align-items-center p-4  bg-light shadow tarjeta">
-            <div class="rollargent-box text-center mb-3 imagenDesktop">
-                <img src="../dist/img/RollArgent.png"  class="mb-3">
+
+    <!-- Formulario de inicio de Sesion -->
+    <main>
+        <section class="flex-grow-1 d-flex justify-content-center align-items-center p-5 m-5 mt-auto viewHeight">
+            <div class="d-flex flex-column align-items-center p-4  bg-light shadow tarjeta">
+                <div class="rollargent-box text-center mb-3 imagenDesktop">
+                    <img src="../dist/img/RollArgent.png" class="mb-3">
+                </div>
+                <div class="rollargent-box text-center mb-3 imagenResponsive">
+                    <img src="../dist/img/RollArgent.png" class="mb-3" style="width: 260px">
+                </div>
+                <div class="mb-5">
+                    <h2>Regístrate</h2>
+                </div>
+                <form class="w-100">
+                    <p class="fw-bold">Ingrese sus datos aquí</p>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email*</label>
+                        <input type="email" placeholder="Email" class="form-control" id="exampleInputEmail1"
+                            aria-describedby="emailHelp" required >
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputNombre1" class="form-label">Nombre*</label>
+                        <input type="text" placeholder="Nombre" class="form-control" id="exampleInputText1"
+                            aria-describedby="textHelp" required >
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputApellido1" class="form-label">Apellido*</label>
+                        <input type="text" placeholder="Apellido" class="form-control" id="exampleInputApellido1"
+                            aria-describedby="textHelp" required >
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Contraseña*</label>
+                        <input type="password" placeholder="Contraseña" class="form-control" id="exampleInputPassword1" required >
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100 ingresar mb-3 fw-bold"
+                        style="color: #023047">Regístrate</button>
+                    <div class="d-flex justify-content-center text-center mb-3">
+                        <p class="mb-0">Ya tienes una cuenta? </p><a class="nav-link p-0" href="./login.html"
+                            style="color: #FFCB3B"> &nbsp; Iniciar sesión</a>
+                    </div>
+                </form>
             </div>
-            <div class="rollargent-box text-center mb-3 imagenResponsive">
-                <img src="../dist/img/RollArgent.png" class="mb-3" style="width: 260px">
-            </div>
-            <div  class="mb-5">
-                <h2>Regístrate</h2>
-            </div>
-            <form class="w-100">
-                <p class="fw-bold">Ingrese sus datos aquí</p>
-                <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Email</label>
-                    <input type="email" placeholder="Email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                </div>
-                <div class="mb-3">
-                    <label for="exampleInputNombre1" class="form-label">Nombre</label>
-                    <input type="text" placeholder="Nombre" class="form-control" id="exampleInputText1" aria-describedby="textHelp">
-                </div>
-                <div class="mb-3">
-                    <label for="exampleInputApellido1" class="form-label">Apellido</label>
-                    <input type="text" placeholder="Apellido" class="form-control" id="exampleInputApellido1" aria-describedby="textHelp">
-                </div>
-                <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-                    <input type="password" placeholder="Contraseña" class="form-control" id="exampleInputPassword1">
-                </div>
-                <button type="submit" class="btn btn-primary w-100 ingresar mb-3 fw-bold" style="color: #023047">Regístrate</button>
-                <div class="d-flex justify-content-center text-center mb-3" >
-                    <p class="mb-0">Ya tienes una cuenta? </p><a class="nav-link p-0" href="./login.html" style="color: #FFCB3B"> &nbsp; Iniciar sesión</a>
-                </div>
-            </form>
-        </div>
-    </section>
-    
-<!-- Navbar Fixed -->
+        </section>
+    </main>
+
+
+    <!-- Navbar Fixed -->
     <footer class="text-center py-3 mt-auto position-relative">
         <div class="container">
             <ul class="list-inline">
@@ -108,10 +118,10 @@
             <p class="mb-0">RollArgent, 2025 all rights reserved</p>
         </div>
     </footer>
-    
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
