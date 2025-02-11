@@ -202,7 +202,7 @@ footer .list-inline {
 }
 main {
   margin-top: 180px;
-  padding-bottom: 5%;
+  padding-bottom: 8%;
 }
 
 h1 {
@@ -239,6 +239,6 @@ footer p {
 
 @media (max-width: 576px) {
   main {
-    margin: 0 30px 0 30px;
+    margin: 155px 30px 20px 30px;
   }
 }/*# sourceMappingURL=styles_about.css.map */
