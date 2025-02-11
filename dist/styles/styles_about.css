@@ -233,6 +233,9 @@ ul {
 footer {
   margin-top: 200px;
 }
+footer p {
+  color: #81B6D0;
+}
 
 @media (max-width: 576px) {
   main {
